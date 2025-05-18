@@ -22,6 +22,22 @@ export default function ChainLogo({ chain, size = 20, className = "" }: ChainLog
     return "/images/base-chain-logo.png"
   }
 
+  // Chain-specific colors
+  const getChainColor = (chainName: string): string => {
+    const normalizedChain = chainName.toLowerCase().trim()
+
+    if (normalizedChain.includes("base")) {
+      return "#b0e0e6" // Powder blue
+    } else if (normalizedChain.includes("bnb")) {
+      return "#f0c010" // Yellow
+    } else if (normalizedChain.includes("sonic")) {
+      return "#ffffff" // White
+    }
+
+    // Fallback
+    return "#0ea5e9" // Default blue
+  }
+
   return (
     <div className={`inline-flex items-center ${className}`}>
       <Image

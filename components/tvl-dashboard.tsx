@@ -54,8 +54,16 @@ export default function TVLDashboard({ stakedAmount }: TVLDashboardProps) {
     rewards: amount,
   }))
 
-  // Colors for the charts - using our new blue theme
-  const COLORS = ["#0ea5e9", "#0369a1", "#0c4a6e", "#475569"]
+  // Updated colors for the charts - using chain-specific colors
+  // Base Chain: Powder blue, BNB Chain: Yellow, Sonic Chain: White
+  const CHAIN_COLORS = {
+    "Base Chain": "#b0e0e6", // Powder blue
+    "BNB Chain": "#f0c010", // Yellow (slightly muted to work better on dark background)
+    "Sonic Chain": "#ffffff", // White
+  }
+
+  // Create an array of colors for charts
+  const COLORS = Object.values(CHAIN_COLORS)
 
   // Generate sample TVL growth data
   const generateTVLGrowthData = () => {
@@ -114,6 +122,11 @@ export default function TVLDashboard({ stakedAmount }: TVLDashboardProps) {
 
   const tvlTrendData = generateTVLTrendData()
   const tvlGrowthData = generateTVLGrowthData()
+
+  // Helper function to get chain color
+  const getChainColor = (chain: string) => {
+    return CHAIN_COLORS[chain] || "#0ea5e9" // Default to blue if chain not found
+  }
 
   return (
     <Card className="w-full bg-card border-border">
@@ -200,7 +213,7 @@ export default function TVLDashboard({ stakedAmount }: TVLDashboardProps) {
                   label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
                 >
                   {pieData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                    <Cell key={`cell-${index}`} fill={getChainColor(entry.name)} />
                   ))}
                 </Pie>
                 <Tooltip
@@ -248,8 +261,8 @@ export default function TVLDashboard({ stakedAmount }: TVLDashboardProps) {
                   formatter={(value) => [`${Number(value).toFixed(4)} USDC`, "Daily Rewards"]}
                 />
                 <Bar dataKey="rewards" fill="#0ea5e9">
-                  {barData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  {barData.map((entry) => (
+                    <Cell key={`cell-${entry.name}`} fill={getChainColor(entry.name)} />
                   ))}
                 </Bar>
               </BarChart>
@@ -288,9 +301,9 @@ export default function TVLDashboard({ stakedAmount }: TVLDashboardProps) {
                     </span>
                   )}
                 />
-                <Bar name="Base Chain" dataKey="baseChain" stackId="a" fill="#0ea5e9" />
-                <Bar name="BNB Chain" dataKey="bnbChain" stackId="a" fill="#0369a1" />
-                <Bar name="Sonic Chain" dataKey="sonicChain" stackId="a" fill="#0c4a6e" />
+                <Bar name="Base Chain" dataKey="baseChain" stackId="a" fill={CHAIN_COLORS["Base Chain"]} />
+                <Bar name="BNB Chain" dataKey="bnbChain" stackId="a" fill={CHAIN_COLORS["BNB Chain"]} />
+                <Bar name="Sonic Chain" dataKey="sonicChain" stackId="a" fill={CHAIN_COLORS["Sonic Chain"]} />
               </BarChart>
             </ResponsiveContainer>
           </TabsContent>
@@ -299,13 +312,10 @@ export default function TVLDashboard({ stakedAmount }: TVLDashboardProps) {
         <div className="mt-6">
           <h4 className="mb-2 text-sm font-medium text-foreground">Chain Distribution</h4>
           <div className="space-y-2">
-            {Object.entries(stakedAmount).map(([chain, amount], index) => (
+            {Object.entries(stakedAmount).map(([chain, amount]) => (
               <div key={chain} className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div
-                    className="mr-2 h-3 w-3 rounded-full"
-                    style={{ backgroundColor: COLORS[index % COLORS.length] }}
-                  />
+                  <div className="mr-2 h-3 w-3 rounded-full" style={{ backgroundColor: getChainColor(chain) }} />
                   <div className="flex items-center">
                     <ChainLogo chain={chain} size={16} />
                     <span className="text-sm text-foreground">{chain}</span>

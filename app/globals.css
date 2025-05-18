@@ -33,6 +33,11 @@
     --ring: 212.7 26.8% 83.9%;
 
     --radius: 0.5rem;
+
+    /* Chain-specific colors */
+    --base-chain: 195 53% 79%; /* Powder blue */
+    --bnb-chain: 49 88% 50%; /* Yellow */
+    --sonic-chain: 0 0% 100%; /* White */
   }
 }
 
@@ -43,4 +48,29 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Chain-specific color classes */
+.chain-color-base {
+  color: hsl(var(--base-chain));
+}
+
+.chain-color-bnb {
+  color: hsl(var(--bnb-chain));
+}
+
+.chain-color-sonic {
+  color: hsl(var(--sonic-chain));
+}
+
+.chain-bg-base {
+  background-color: hsl(var(--base-chain));
+}
+
+.chain-bg-bnb {
+  background-color: hsl(var(--bnb-chain));
+}
+
+.chain-bg-sonic {
+  background-color: hsl(var(--sonic-chain));
 }
