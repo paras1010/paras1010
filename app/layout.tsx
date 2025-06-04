@@ -6,8 +6,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "HyperLP Logo Showcase",
-  description: "Modern 3D logo design for decentralized finance and liquidity provision",
+  title: "Stable Vault - USDC Staking Platform",
+  description: "Stake your USDC tokens across multiple chains with 0.35% daily APR",
     generator: 'v0.dev'
 }
 
