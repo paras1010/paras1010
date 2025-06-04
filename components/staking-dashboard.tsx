@@ -18,7 +18,7 @@ import AnimatedBackground from "@/components/animated-background"
 import FloatingElements from "@/components/floating-elements"
 import GradientOrbs from "@/components/gradient-orbs"
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts"
-import { Lock, TrendingDown } from "lucide-react"
+import { TrendingDown, Bot, Brain } from "lucide-react"
 
 // Generate a unique ID
 const generateId = () => {
@@ -305,9 +305,10 @@ export default function StakingDashboard() {
         {/* Hero Section */}
         <div className="container py-20">
           <div className="max-w-4xl">
-            <h1 className="text-6xl font-bold text-white mb-6 animate-glow">Welcome to Stable Vault</h1>
+            <h1 className="text-6xl font-bold text-white mb-6 animate-glow">Welcome to HYPERLP</h1>
             <p className="text-xl text-blue-200 mb-8 max-w-2xl">
-              Your secure gateway to earning steady yield from stablecoins.
+              AI-powered liquidity provision platform that maximizes yield through intelligent trading strategies across
+              multiple blockchain networks.
             </p>
             <Button
               size="lg"
@@ -333,17 +334,21 @@ export default function StakingDashboard() {
 
             <Card className="glass-card hover-scale smooth-transition">
               <CardContent className="p-6">
-                <div className="text-blue-300 text-sm mb-2">Daily Rewards</div>
-                <div className="text-white text-3xl font-bold">
+                <div className="text-blue-300 text-sm mb-2">AI-Generated Rewards</div>
+                <div className="text-white text-3xl font-bold flex items-center">
                   {Math.floor(totalDailyRewards * 4200).toLocaleString()}
+                  <Bot className="ml-2 h-5 w-5 text-teal-400 animate-glow" />
                 </div>
               </CardContent>
             </Card>
 
             <Card className="glass-card hover-scale smooth-transition">
               <CardContent className="p-6">
-                <div className="text-blue-300 text-sm mb-2">Average APY</div>
-                <div className="text-white text-3xl font-bold">6.72%</div>
+                <div className="text-blue-300 text-sm mb-2">AI Success Rate</div>
+                <div className="text-white text-3xl font-bold flex items-center">
+                  94.2%
+                  <Brain className="ml-2 h-5 w-5 text-purple-400 animate-glow" />
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -376,7 +381,10 @@ export default function StakingDashboard() {
                 {/* Stake Section */}
                 <Card className="glass-card hover-scale smooth-transition">
                   <CardHeader>
-                    <CardTitle className="text-white text-2xl">Stake</CardTitle>
+                    <CardTitle className="text-white text-2xl flex items-center">
+                      <Bot className="mr-2 h-6 w-6 text-teal-400" />
+                      AI-Powered Staking
+                    </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-3">
@@ -390,13 +398,13 @@ export default function StakingDashboard() {
                         <span className="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 animate-glow">
                           2
                         </span>
-                        Select a chain
+                        Select a blockchain network
                       </div>
                       <div className="flex items-center text-blue-200">
                         <span className="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 animate-glow">
                           3
                         </span>
-                        Enter the amount to stake
+                        AI optimizes your liquidity
                       </div>
                     </div>
 
@@ -413,21 +421,24 @@ export default function StakingDashboard() {
                   </CardContent>
                 </Card>
 
-                {/* Rewards Section */}
+                {/* AI Rewards Section */}
                 <Card className="glass-card hover-scale smooth-transition">
                   <CardHeader>
-                    <CardTitle className="text-white text-2xl">Rewards</CardTitle>
+                    <CardTitle className="text-white text-2xl flex items-center">
+                      <Brain className="mr-2 h-6 w-6 text-purple-400" />
+                      AI Rewards
+                    </CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col items-center justify-center py-8">
                     <div className="bg-teal-600/20 rounded-full p-8 mb-6 animate-glow">
-                      <Lock className="h-16 w-16 text-teal-400" />
+                      <Bot className="h-16 w-16 text-teal-400" />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <span className="text-teal-400 text-2xl font-bold">$</span>
                       </div>
                     </div>
 
                     <div className="text-blue-300 text-sm mb-2 flex items-center">
-                      Estimated Weekly
+                      AI-Generated Weekly
                       <div className="ml-2 w-4 h-4 rounded-full border border-blue-300 flex items-center justify-center">
                         <span className="text-xs">i</span>
                       </div>
@@ -441,7 +452,7 @@ export default function StakingDashboard() {
                 {/* Chain Distribution */}
                 <Card className="glass-card hover-scale smooth-transition">
                   <CardHeader>
-                    <CardTitle className="text-white text-2xl">Chain Distribution</CardTitle>
+                    <CardTitle className="text-white text-2xl">Network Distribution</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="h-48 flex items-center justify-center">
@@ -496,9 +507,9 @@ export default function StakingDashboard() {
                 <div className="lg:col-span-2">
                   <Card className="glass-card hover-scale smooth-transition">
                     <CardHeader>
-                      <CardTitle className="text-white text-2xl">Your Deposits</CardTitle>
+                      <CardTitle className="text-white text-2xl">Your AI-Managed Deposits</CardTitle>
                       <CardDescription className="text-blue-200">
-                        Overview of all your staked USDC deposits
+                        Overview of all your USDC deposits being optimized by AI
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -517,8 +528,8 @@ export default function StakingDashboard() {
                 <div>
                   <Card className="glass-card hover-scale smooth-transition">
                     <CardHeader>
-                      <CardTitle className="text-white text-2xl">New Deposit</CardTitle>
-                      <CardDescription className="text-blue-200">Stake additional USDC to earn rewards</CardDescription>
+                      <CardTitle className="text-white text-2xl">New AI Deposit</CardTitle>
+                      <CardDescription className="text-blue-200">Let AI maximize your USDC returns</CardDescription>
                     </CardHeader>
                     <CardContent>
                       {!connected ? (
@@ -541,9 +552,9 @@ export default function StakingDashboard() {
                 <div className="lg:col-span-2">
                   <Card className="glass-card hover-scale smooth-transition">
                     <CardHeader>
-                      <CardTitle className="text-white text-2xl">Rewards History</CardTitle>
+                      <CardTitle className="text-white text-2xl">AI-Generated Rewards History</CardTitle>
                       <CardDescription className="text-blue-200">
-                        View your collected rewards history across all chains
+                        Track your AI-optimized rewards across all networks
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -578,7 +589,7 @@ export default function StakingDashboard() {
                     <CardHeader>
                       <CardTitle className="text-white text-2xl">Withdrawal Options</CardTitle>
                       <CardDescription className="text-blue-200">
-                        Choose between normal and early withdrawal
+                        Choose between normal and early withdrawal from AI-managed positions
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -608,8 +619,8 @@ export default function StakingDashboard() {
                       <div className="space-y-2">
                         <h3 className="text-lg font-medium text-white">Normal Withdrawal</h3>
                         <p className="text-blue-200 text-sm">
-                          After the full 200-day staking period, you can withdraw your entire initial deposit plus all
-                          earned rewards without any fees.
+                          After the full 200-day AI optimization period, withdraw your entire initial deposit plus all
+                          AI-generated rewards without any fees.
                         </p>
                       </div>
 
@@ -617,12 +628,12 @@ export default function StakingDashboard() {
                         <h3 className="text-lg font-medium text-yellow-300">Early Withdrawal</h3>
                         <p className="text-blue-200 text-sm">
                           After 150 days, you can withdraw your funds early with a 15% fee on your initial deposit. You
-                          will receive 85% of your initial deposit plus all earned rewards.
+                          will receive 85% of your initial deposit plus all AI-generated rewards.
                         </p>
                       </div>
 
                       <div className="space-y-2">
-                        <h3 className="text-lg font-medium text-white">Withdrawal Timeline</h3>
+                        <h3 className="text-lg font-medium text-white">AI Optimization Timeline</h3>
                         <div className="relative pt-6">
                           <div className="absolute left-0 right-0 h-1 bg-slate-700 top-0"></div>
                           <div className="absolute left-0 w-3/4 h-1 bg-teal-600 top-0 animate-shimmer"></div>
@@ -636,7 +647,7 @@ export default function StakingDashboard() {
                             <div className="text-green-400">Day 200</div>
                           </div>
                           <div className="grid grid-cols-3 text-center text-xs mt-1">
-                            <div className="text-slate-400">Deposit</div>
+                            <div className="text-slate-400">AI Setup</div>
                             <div className="text-yellow-400">
                               Early Withdrawal
                               <br />

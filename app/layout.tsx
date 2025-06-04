@@ -6,8 +6,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Stable Vault - USDC Staking Platform",
-  description: "Stake your USDC tokens across multiple chains with 0.35% daily APR",
+  title: "HYPERLP - AI-Powered Liquidity Platform",
+  description: "AI-driven liquidity provision across multiple chains with intelligent trading strategies",
     generator: 'v0.dev'
 }
 

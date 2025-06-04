@@ -5,8 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Stable Vault - USDC Staking Platform",
-  description: "Stake your USDC tokens across multiple chains with 0.35% daily APR",
+  title: "HYPERLP - AI-Powered Liquidity Platform",
+  description: "AI-driven liquidity provision across multiple chains with intelligent trading strategies",
 }
 
 export default function Home() {
@@ -17,9 +17,9 @@ export default function Home() {
           <div className="mr-4 flex items-center space-x-2">
             <div className="flex items-center space-x-3">
               <div className="bg-teal-600 rounded-lg p-2">
-                <Image src="/logo.png" alt="Stable Vault Logo" width={24} height={24} className="h-6 w-6" />
+                <Image src="/logo.png" alt="HYPERLP Logo" width={24} height={24} className="h-6 w-6" />
               </div>
-              <span className="font-bold text-white text-xl">Stable Vault</span>
+              <span className="font-bold text-white text-xl">HYPERLP</span>
             </div>
           </div>
           <nav className="flex flex-1 items-center justify-center space-x-8">
