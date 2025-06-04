@@ -108,6 +108,18 @@ export default function StakingDashboard() {
     },
   ])
 
+  const [withdrawalRequests, setWithdrawalRequests] = useState<
+    Record<
+      string,
+      {
+        requestDate: Date
+        amount: number
+        chain: string
+        isEarly: boolean
+      }
+    >
+  >({})
+
   // Update deposit statuses based on their age
   useEffect(() => {
     const updatedDeposits = deposits.map((deposit) => {
@@ -604,6 +616,8 @@ export default function StakingDashboard() {
                           connected={connected}
                           stakedAmount={stakedAmount}
                           stakingDates={stakingDates}
+                          withdrawalRequests={withdrawalRequests}
+                          setWithdrawalRequests={setWithdrawalRequests}
                         />
                       )}
                     </CardContent>

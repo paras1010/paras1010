@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, ArrowRight, CheckCircle, Bot, Brain, TrendingUp } from "lucide-react"
+import { ArrowLeft, ArrowRight, CheckCircle, Bot, Brain, TrendingUp, DollarSign, Users } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import AnimatedBackground from "@/components/animated-background"
 import GradientOrbs from "@/components/gradient-orbs"
@@ -301,6 +301,316 @@ export default function DocumentationPage() {
                             <p>
                               <strong>5. Continuous Learning:</strong> The AI systems continuously learn from each
                               execution, improving performance over time.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </section>
+
+                  <section id="staking" className="scroll-mt-16">
+                    <Card className="glass-card border-border">
+                      <CardHeader>
+                        <CardTitle className="text-2xl flex items-center">
+                          <TrendingUp className="mr-2 h-6 w-6 text-green-400" />
+                          AI-Powered Staking
+                        </CardTitle>
+                        <CardDescription>How to stake USDC and let AI maximize your returns</CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-6 text-foreground">
+                        <div className="space-y-4">
+                          <h3 className="text-lg font-medium">Getting Started with Staking</h3>
+                          <p>
+                            Staking on HYPERLP is designed to be simple while leveraging sophisticated AI technology
+                            behind the scenes. Here's how to get started:
+                          </p>
+
+                          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                            <div className="glass-card p-4 text-center">
+                              <div className="text-2xl font-bold text-blue-400 mb-2">1</div>
+                              <div className="text-sm font-medium">Connect Wallet</div>
+                              <div className="text-xs text-muted-foreground mt-1">Link your Web3 wallet</div>
+                            </div>
+                            <div className="glass-card p-4 text-center">
+                              <div className="text-2xl font-bold text-purple-400 mb-2">2</div>
+                              <div className="text-sm font-medium">Choose Network</div>
+                              <div className="text-xs text-muted-foreground mt-1">Select blockchain network</div>
+                            </div>
+                            <div className="glass-card p-4 text-center">
+                              <div className="text-2xl font-bold text-teal-400 mb-2">3</div>
+                              <div className="text-sm font-medium">Stake USDC</div>
+                              <div className="text-xs text-muted-foreground mt-1">Minimum 10 USDC</div>
+                            </div>
+                            <div className="glass-card p-4 text-center">
+                              <div className="text-2xl font-bold text-green-400 mb-2">4</div>
+                              <div className="text-sm font-medium">AI Optimizes</div>
+                              <div className="text-xs text-muted-foreground mt-1">Earn up to 127.75% APR</div>
+                            </div>
+                          </div>
+
+                          <h3 className="text-lg font-medium mt-6">Staking Terms & Conditions</h3>
+                          <div className="glass-card p-6">
+                            <div className="grid gap-4 sm:grid-cols-2">
+                              <div>
+                                <h4 className="font-medium text-blue-400 mb-2">Staking Period</h4>
+                                <p className="text-sm text-muted-foreground">
+                                  200 days for full maturity and maximum returns
+                                </p>
+                              </div>
+                              <div>
+                                <h4 className="font-medium text-purple-400 mb-2">Daily APR</h4>
+                                <p className="text-sm text-muted-foreground">0.35% daily through AI optimization</p>
+                              </div>
+                              <div>
+                                <h4 className="font-medium text-teal-400 mb-2">Total APR</h4>
+                                <p className="text-sm text-muted-foreground">Up to 127.75% over 200 days</p>
+                              </div>
+                              <div>
+                                <h4 className="font-medium text-green-400 mb-2">Minimum Stake</h4>
+                                <p className="text-sm text-muted-foreground">10 USDC per transaction</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <h3 className="text-lg font-medium">Early Withdrawal Options</h3>
+                          <p>HYPERLP offers flexible withdrawal options to accommodate different user needs:</p>
+                          <div className="space-y-3">
+                            <div className="glass-card p-4">
+                              <h4 className="font-medium text-yellow-400 mb-2">Early Withdrawal (After 150 Days)</h4>
+                              <p className="text-sm text-muted-foreground">
+                                Withdraw with a 15% fee on your initial deposit. After submitting your withdrawal
+                                request, there is a mandatory 48-hour waiting period before you can claim your funds.
+                                You receive 85% of your principal plus all AI-generated rewards after this waiting
+                                period.
+                              </p>
+                            </div>
+                            <div className="glass-card p-4">
+                              <h4 className="font-medium text-green-400 mb-2">Normal Withdrawal (After 200 Days)</h4>
+                              <p className="text-sm text-muted-foreground">
+                                Withdraw your complete initial deposit plus all AI-generated rewards with no fees.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </section>
+
+                  <section id="rewards" className="scroll-mt-16">
+                    <Card className="glass-card border-border">
+                      <CardHeader>
+                        <CardTitle className="text-2xl flex items-center">
+                          <DollarSign className="mr-2 h-6 w-6 text-yellow-400" />
+                          Collecting AI-Generated Rewards
+                        </CardTitle>
+                        <CardDescription>Understanding how rewards are generated and collected</CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-6 text-foreground">
+                        <div className="space-y-4">
+                          <h3 className="text-lg font-medium">How AI Generates Rewards</h3>
+                          <p>
+                            Your staked USDC is actively managed by our AI systems to generate returns through
+                            sophisticated liquidity provision strategies. The AI continuously analyzes market conditions
+                            and executes optimal trading strategies across multiple blockchain networks.
+                          </p>
+
+                          <div className="glass-card p-6">
+                            <h4 className="font-medium text-teal-400 mb-4">AI Reward Generation Process</h4>
+                            <div className="space-y-3 text-sm">
+                              <div className="flex items-start">
+                                <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center mr-3 mt-0.5">
+                                  <span className="text-xs text-blue-400">1</span>
+                                </div>
+                                <div>
+                                  <strong>Market Analysis:</strong> AI scans for high-volume trading opportunities
+                                  across networks
+                                </div>
+                              </div>
+                              <div className="flex items-start">
+                                <div className="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center mr-3 mt-0.5">
+                                  <span className="text-xs text-purple-400">2</span>
+                                </div>
+                                <div>
+                                  <strong>Strategy Execution:</strong> AI applies learned patterns from professional LPs
+                                </div>
+                              </div>
+                              <div className="flex items-start">
+                                <div className="w-6 h-6 rounded-full bg-teal-500/20 flex items-center justify-center mr-3 mt-0.5">
+                                  <span className="text-xs text-teal-400">3</span>
+                                </div>
+                                <div>
+                                  <strong>Profit Distribution:</strong> Generated profits are allocated to user reward
+                                  balances
+                                </div>
+                              </div>
+                              <div className="flex items-start">
+                                <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center mr-3 mt-0.5">
+                                  <span className="text-xs text-green-400">4</span>
+                                </div>
+                                <div>
+                                  <strong>Flexible Collection:</strong> Users can collect rewards at any time
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <h3 className="text-lg font-medium">Collecting Your Rewards</h3>
+                          <p>
+                            Unlike many platforms that lock rewards until maturity, HYPERLP allows you to collect your
+                            AI-generated rewards at any time during the staking period.
+                          </p>
+
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="glass-card p-4">
+                              <h4 className="font-medium text-blue-400 mb-2">Flexible Collection</h4>
+                              <p className="text-sm text-muted-foreground">
+                                Collect your accrued rewards whenever you want. No waiting periods or restrictions.
+                              </p>
+                            </div>
+                            <div className="glass-card p-4">
+                              <h4 className="font-medium text-purple-400 mb-2">Compound Option</h4>
+                              <p className="text-sm text-muted-foreground">
+                                Reinvest collected rewards to create additional AI-managed positions for compound
+                                growth.
+                              </p>
+                            </div>
+                          </div>
+
+                          <h3 className="text-lg font-medium">Reward Tracking & History</h3>
+                          <p>The HYPERLP dashboard provides comprehensive tracking of your AI-generated rewards:</p>
+                          <ul className="list-disc space-y-2 pl-5 text-sm">
+                            <li>Real-time display of pending rewards across all networks</li>
+                            <li>Daily yield generation tracking with detailed history</li>
+                            <li>Complete collection history with timestamps and amounts</li>
+                            <li>Network-specific reward breakdown and performance metrics</li>
+                            <li>AI performance analytics and strategy insights</li>
+                          </ul>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </section>
+
+                  <section id="referrals" className="scroll-mt-16">
+                    <Card className="glass-card border-border">
+                      <CardHeader>
+                        <CardTitle className="text-2xl flex items-center">
+                          <Users className="mr-2 h-6 w-6 text-orange-400" />
+                          Referral Program
+                        </CardTitle>
+                        <CardDescription>Earn 2% of every referral's deposit amount</CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-6 text-foreground">
+                        <div className="space-y-4">
+                          <h3 className="text-lg font-medium">How the Referral Program Works</h3>
+                          <p>
+                            The HYPERLP referral program rewards you for bringing new users to the platform. You earn 2%
+                            of the deposit amount for every user who stakes USDC using your unique referral link.
+                          </p>
+
+                          <div className="glass-card p-6">
+                            <h4 className="font-medium text-orange-400 mb-4">Referral Rewards Structure</h4>
+                            <div className="grid gap-4 sm:grid-cols-3">
+                              <div className="text-center">
+                                <div className="text-3xl font-bold text-orange-400 mb-2">2%</div>
+                                <div className="text-sm font-medium">Referral Rate</div>
+                                <div className="text-xs text-muted-foreground">Of deposit amount</div>
+                              </div>
+                              <div className="text-center">
+                                <div className="text-3xl font-bold text-blue-400 mb-2">∞</div>
+                                <div className="text-sm font-medium">No Limits</div>
+                                <div className="text-xs text-muted-foreground">Unlimited referrals</div>
+                              </div>
+                              <div className="text-center">
+                                <div className="text-3xl font-bold text-green-400 mb-2">24/7</div>
+                                <div className="text-sm font-medium">Instant Rewards</div>
+                                <div className="text-xs text-muted-foreground">Immediate crediting</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <h3 className="text-lg font-medium">Getting Started with Referrals</h3>
+                          <div className="space-y-3">
+                            <div className="flex items-start">
+                              <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center mr-3 mt-0.5">
+                                <span className="text-sm text-orange-400">1</span>
+                              </div>
+                              <div>
+                                <strong>Connect Your Wallet:</strong> Your unique referral link is generated based on
+                                your wallet address
+                              </div>
+                            </div>
+                            <div className="flex items-start">
+                              <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center mr-3 mt-0.5">
+                                <span className="text-sm text-blue-400">2</span>
+                              </div>
+                              <div>
+                                <strong>Share Your Link:</strong> Use the built-in sharing tools for social media,
+                                email, or direct messaging
+                              </div>
+                            </div>
+                            <div className="flex items-start">
+                              <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center mr-3 mt-0.5">
+                                <span className="text-sm text-green-400">3</span>
+                              </div>
+                              <div>
+                                <strong>Earn Rewards:</strong> Receive 2% of every deposit made through your link
+                              </div>
+                            </div>
+                          </div>
+
+                          <h3 className="text-lg font-medium">Referral Dashboard Features</h3>
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="glass-card p-4">
+                              <h4 className="font-medium text-blue-400 mb-2">Comprehensive Tracking</h4>
+                              <ul className="text-sm text-muted-foreground space-y-1">
+                                <li>• Total and active referral counts</li>
+                                <li>• Individual referral performance</li>
+                                <li>• Earnings breakdown by referral</li>
+                                <li>• Complete claim history</li>
+                              </ul>
+                            </div>
+                            <div className="glass-card p-4">
+                              <h4 className="font-medium text-purple-400 mb-2">Easy Management</h4>
+                              <ul className="text-sm text-muted-foreground space-y-1">
+                                <li>• One-click link copying</li>
+                                <li>• Social media sharing tools</li>
+                                <li>• Flexible reward claiming</li>
+                                <li>• Real-time earnings updates</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div className="glass-card p-6">
+                            <h4 className="font-medium text-teal-400 mb-4">Example Referral Earnings</h4>
+                            <div className="space-y-3 text-sm">
+                              <div className="flex justify-between items-center p-3 bg-slate-800/30 rounded">
+                                <span>Referral stakes 500 USDC</span>
+                                <span className="text-green-400 font-medium">You earn: 10 USDC</span>
+                              </div>
+                              <div className="flex justify-between items-center p-3 bg-slate-800/30 rounded">
+                                <span>Referral stakes 1,000 USDC</span>
+                                <span className="text-green-400 font-medium">You earn: 20 USDC</span>
+                              </div>
+                              <div className="flex justify-between items-center p-3 bg-slate-800/30 rounded">
+                                <span>Referral stakes 2,500 USDC</span>
+                                <span className="text-green-400 font-medium">You earn: 50 USDC</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <h3 className="text-lg font-medium">Important Notes</h3>
+                          <div className="space-y-2 text-sm">
+                            <p>
+                              <strong>One-time Reward:</strong> You earn 2% of the initial deposit amount only. You
+                              don't earn from the AI-generated profits of your referrals.
+                            </p>
+                            <p>
+                              <strong>Multiple Deposits:</strong> If a referred user makes additional deposits, you earn
+                              the 2% reward on each new deposit.
+                            </p>
+                            <p>
+                              <strong>Instant Crediting:</strong> Referral rewards are added to your claimable balance
+                              immediately after the referred user's successful deposit.
                             </p>
                           </div>
                         </div>

@@ -252,22 +252,26 @@ export default function FAQPage() {
                       <CardContent>
                         <Accordion type="single" collapsible className="w-full">
                           <AccordionItem value="item-1">
-                            <AccordionTrigger>What is the staking period?</AccordionTrigger>
+                            <AccordionTrigger>What is the staking period and how does it work?</AccordionTrigger>
                             <AccordionContent>
                               The staking period in HYPERLP is 200 days. During this period, your staked USDC is managed
                               by our AI systems to earn up to 127.75% total APR through intelligent liquidity provision
                               strategies. Your original investment is returned to you when your stake expires, plus all
-                              AI-generated rewards.
+                              AI-generated rewards. The AI works 24/7 to optimize your returns across multiple
+                              blockchain networks and trading opportunities.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-2">
-                            <AccordionTrigger>How are AI-generated rewards calculated?</AccordionTrigger>
+                            <AccordionTrigger>
+                              How are AI-generated rewards calculated and distributed?
+                            </AccordionTrigger>
                             <AccordionContent>
                               Rewards are generated through AI-optimized liquidity provision strategies that target
                               approximately 0.35% daily returns. Our AI models continuously analyze market conditions
                               and execute optimal trading strategies across multiple blockchain networks. The actual
                               returns may vary based on market conditions, but our AI systems are designed to maximize
-                              risk-adjusted returns while protecting your principal investment.
+                              risk-adjusted returns while protecting your principal investment. Rewards are credited to
+                              your account in real-time and can be collected at any time.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-3">
@@ -276,15 +280,19 @@ export default function FAQPage() {
                               You can collect your accrued AI-generated rewards at any time during the staking period.
                               Unlike some platforms that lock rewards until maturity, HYPERLP allows flexible reward
                               collection. This gives you the option to either withdraw your earnings or reinvest them to
-                              compound your returns through additional AI-managed positions.
+                              compound your returns through additional AI-managed positions. There are no restrictions
+                              or waiting periods for reward collection.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-4">
-                            <AccordionTrigger>What is the minimum staking amount?</AccordionTrigger>
+                            <AccordionTrigger>
+                              What is the minimum staking amount and are there any limits?
+                            </AccordionTrigger>
                             <AccordionContent>
                               The minimum amount you can stake on HYPERLP is 10 USDC. This minimum applies to each
                               staking transaction and ensures efficient AI management of your funds. There is no maximum
-                              limit on how much you can stake, allowing for scalable AI-powered liquidity provision.
+                              limit on how much you can stake, allowing for scalable AI-powered liquidity provision. You
+                              can also make multiple deposits across different blockchain networks.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-5">
@@ -294,7 +302,7 @@ export default function FAQPage() {
                               Chain, BNB Chain, and Sonic Chain). Our AI systems will optimize liquidity provision
                               across all your positions, potentially moving funds between networks based on real-time
                               opportunity analysis. Each network maintains its own separate staking balance and rewards
-                              tracking.
+                              tracking, giving you full visibility into your diversified AI-managed portfolio.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-6">
@@ -304,7 +312,7 @@ export default function FAQPage() {
                               systems operate on a revenue-sharing model where we earn a percentage of the generated
                               profits, aligning our incentives with your success. However, you will need to pay the
                               standard blockchain network transaction fees (gas fees) when interacting with the smart
-                              contracts.
+                              contracts for deposits, withdrawals, and reward collection.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-7">
@@ -312,11 +320,42 @@ export default function FAQPage() {
                               Can I withdraw my staked USDC before the 200-day period ends?
                             </AccordionTrigger>
                             <AccordionContent>
-                              Yes, you can withdraw your staked USDC at any time, but there is an early withdrawal fee
-                              of 15% of the staked amount if you withdraw before 150 days. Early withdrawal after 150
-                              days incurs a 15% fee to account for AI strategy disruption. After the full 200-day
-                              period, you can withdraw your complete staked amount plus all AI-generated rewards without
-                              any penalties.
+                              Yes, you can withdraw your staked USDC before the full 200-day period, but there are
+                              different conditions based on timing. If you withdraw before 150 days, your funds remain
+                              locked. After 150 days, you can make an early withdrawal with a 15% fee on your initial
+                              deposit amount. Important: After submitting an early withdrawal request, there is a
+                              mandatory 48-hour waiting period before you can claim your funds. You will receive 85% of
+                              your principal plus all AI-generated rewards after this waiting period. After the full
+                              200-day period, you can withdraw your complete staked amount plus all AI-generated rewards
+                              without any penalties or waiting periods.
+                            </AccordionContent>
+                          </AccordionItem>
+                          <AccordionItem value="item-8">
+                            <AccordionTrigger>
+                              How can I track my staking performance and AI-generated rewards?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              The HYPERLP dashboard provides comprehensive tracking of your AI-managed investments. You
+                              can view real-time pending rewards across all networks, daily yield generation with
+                              detailed history, complete collection history with timestamps and amounts,
+                              network-specific reward breakdown, and AI performance analytics. The dashboard also shows
+                              your deposit status, maturity dates, and withdrawal options for each position.
+                            </AccordionContent>
+                          </AccordionItem>
+                          <AccordionItem value="item-9">
+                            <AccordionTrigger>
+                              What is the process for early withdrawal and why is there a waiting period?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              The early withdrawal process has several steps: (1) Submit your early withdrawal request
+                              through the dashboard, (2) Wait for the mandatory 48-hour cooling-off period, (3) Return
+                              to the platform after 48 hours to claim your funds. The waiting period serves multiple
+                              purposes: it allows the AI systems to properly rebalance positions, reduces the impact of
+                              impulsive withdrawals during market volatility, and provides security against unauthorized
+                              withdrawal attempts. During this period, your request can be canceled if you change your
+                              mind. The 15% early withdrawal fee and 48-hour waiting period only apply to withdrawals
+                              made between 150-200 days; full-term withdrawals (after 200 days) have no fee or waiting
+                              period.
                             </AccordionContent>
                           </AccordionItem>
                         </Accordion>
@@ -333,21 +372,23 @@ export default function FAQPage() {
                       <CardContent>
                         <Accordion type="single" collapsible className="w-full">
                           <AccordionItem value="item-1">
-                            <AccordionTrigger>How does the referral program work?</AccordionTrigger>
+                            <AccordionTrigger>How does the referral program work and what do I earn?</AccordionTrigger>
                             <AccordionContent>
                               The HYPERLP referral program rewards you with 2% of the deposit amount when someone uses
                               your unique referral link to stake USDC. For example, if someone stakes 1,000 USDC using
                               your referral link, you'll earn 20 USDC (2% of 1,000) as a referral reward. These rewards
-                              accumulate in your referral balance and can be claimed at any time.
+                              accumulate in your referral balance and can be claimed at any time. The reward is based on
+                              the initial deposit amount only, not on the AI-generated profits.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-2">
-                            <AccordionTrigger>How do I get my referral link?</AccordionTrigger>
+                            <AccordionTrigger>How do I get my referral link and start referring?</AccordionTrigger>
                             <AccordionContent>
                               To get your referral link, connect your wallet to HYPERLP and navigate to the "Referrals"
                               tab. Your unique referral link will be automatically generated based on your wallet
                               address. You can copy this link using the copy button or share it directly through the
-                              social sharing options (Facebook, Twitter, Email).
+                              social sharing options (Facebook, Twitter, Email). The link format is typically
+                              hyperlp.com?ref=[your-wallet-code] and is unique to your wallet address.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-3">
@@ -356,16 +397,20 @@ export default function FAQPage() {
                               No, there is no limit to the number of people you can refer to HYPERLP. You can refer as
                               many users as you want and earn referral rewards from each of them. This makes the
                               referral program an excellent opportunity for users with large networks or influence in
-                              the cryptocurrency community.
+                              the cryptocurrency community. Each successful referral earns you 2% of their deposit
+                              amount, with no caps or restrictions.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-4">
-                            <AccordionTrigger>When do I receive my referral rewards?</AccordionTrigger>
+                            <AccordionTrigger>
+                              When do I receive my referral rewards and how do I claim them?
+                            </AccordionTrigger>
                             <AccordionContent>
                               Referral rewards are added to your claimable balance immediately after the referred user
                               successfully stakes USDC using your referral link. However, you need to manually claim
                               these rewards by clicking the "Claim Rewards" button in the referral dashboard. The
-                              rewards are not automatically transferred to your wallet.
+                              rewards are not automatically transferred to your wallet. You can accumulate multiple
+                              referral rewards and claim them all at once, or claim them individually as they accrue.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-5">
@@ -376,7 +421,8 @@ export default function FAQPage() {
                               No, the referral reward is a one-time 2% of the initial deposit amount made by the
                               referred user. You do not earn ongoing rewards based on the AI-generated profits earned by
                               your referrals. However, if a referred user makes additional deposits in the future, you
-                              will earn the 2% referral reward on those new deposits as well.
+                              will earn the 2% referral reward on those new deposits as well. This encourages long-term
+                              relationships with your referrals.
                             </AccordionContent>
                           </AccordionItem>
                           <AccordionItem value="item-6">
@@ -384,9 +430,32 @@ export default function FAQPage() {
                             <AccordionContent>
                               Yes, the referral dashboard provides comprehensive tracking of your referral performance.
                               You can see the total number of referrals, active referrals, total earnings, and a
-                              detailed list of all your referrals including their wallet addresses, dates, staked
-                              amounts, your earnings, and current status. You can also view your complete claim history
-                              in the "Claim History" tab.
+                              detailed list of all your referrals including their wallet addresses (partially hidden for
+                              privacy), dates, staked amounts, your earnings, and current status. You can also view your
+                              complete claim history in the "Claim History" tab, showing all past reward claims with
+                              timestamps and amounts.
+                            </AccordionContent>
+                          </AccordionItem>
+                          <AccordionItem value="item-7">
+                            <AccordionTrigger>What counts as an "active" referral vs "inactive"?</AccordionTrigger>
+                            <AccordionContent>
+                              An "active" referral is someone who currently has funds staked on HYPERLP through your
+                              referral link. An "inactive" referral is someone who previously staked using your link but
+                              has since withdrawn all their funds. The referral dashboard tracks both categories to give
+                              you a complete picture of your referral network. You earn rewards from both active and
+                              inactive referrals based on their initial deposits.
+                            </AccordionContent>
+                          </AccordionItem>
+                          <AccordionItem value="item-8">
+                            <AccordionTrigger>
+                              Are there any restrictions on how I can promote my referral link?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              While HYPERLP encourages sharing your referral link, you should always be honest and
+                              transparent about the platform's features and risks. Avoid making unrealistic promises
+                              about returns or guarantees. You can share your link through social media, personal
+                              networks, content creation, or community engagement, but ensure you comply with the
+                              platform's terms of service and any applicable regulations in your jurisdiction.
                             </AccordionContent>
                           </AccordionItem>
                         </Accordion>
