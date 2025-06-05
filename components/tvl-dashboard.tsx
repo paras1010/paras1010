@@ -129,7 +129,7 @@ export default function TVLDashboard({ stakedAmount }: TVLDashboardProps) {
   }
 
   return (
-    <Card className="w-full bg-card border-border">
+    <Card className="w-full bg-card/50 backdrop-blur-sm border-border/50">
       <CardHeader>
         <CardTitle className="text-foreground">Total Value Locked (TVL)</CardTitle>
         <CardDescription className="text-muted-foreground">
